@@ -1,0 +1,127 @@
+/* Réinitialisation générale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* En-tête */
+header {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0 10px 0;
+}
+
+header h1 {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 2.6rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+/* Menu de navigation horizontal */
+nav {
+    background-color: #222;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    border-right: 1px solid #555;
+}
+
+nav ul li:first-child {
+    border-left: 1px solid #555;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 22px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #fff;
+    color: #222;
+}
+
+/* Zone centrale des articles */
+.container {
+    flex: 1;
+    width: 85%;
+    max-width: 960px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 25px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.06);
+    border-radius: 4px;
+}
+
+/* Style des blocs d'articles */
+.news-item {
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-item h2 {
+    color: #222;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.news-item .date {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 12px;
+}
+
+.news-item .content {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444;
+    text-align: justify;
+}
+
+.no-article {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+    margin-top: 30px;
+}
+
+/* Pied de page */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-top: auto;
+}
