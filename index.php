@@ -1,5 +1,5 @@
 <?php
-// 1. Charger les modèles (les chemins sont directs maintenant !)
+// 1. Charger les modèles 
 require_once 'modele/categorie.php';
 require_once 'modele/article.php';
 
